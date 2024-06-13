@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userInput = $_POST["number"];
 
     // Check positive integer
-    if (is_numeric($userInput) && $userInput > 0 && intval($userInput) == $userInput) {
+    (is_numeric($userInput) && $userInput > 0 && intval($userInput) == $userInput) {
         if (isPrime($userInput)) {
             echo "$userInput is a prime number.";
         } else {
